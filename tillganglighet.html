@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projekt webbanvändbarhet</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo-section">
+      <i class="fa-solid fa-bus"></i>
+      <h1>Stockholms<br>färdtjänst</h1>
+    </div>
+    
+    <!-- Hamburger-knapp -->
+    <button class="hamburger" id="hamburger">
+      <i class="fa-solid fa-bars"></i> <!--lägger in ikon från fontawesome i en knapp så den blir klickbar-->
+    </button>
+    
+    <!-- Navigation -->
+    <nav id="nav-menu">
+      <a href="index.html">Startsida</a>
+      <a href="bokaresa.html">Boka resa</a>
+      <a href="resor.html">Mina resor</a>
+      <a href="hurbokar.html">Hur bokar du?</a>
+      <a href="info.html">Information</a>
+      <a href="sidor.html">Mina sidor</a>
+    </nav>
+  </header>
+
+  <main class="hero">
+    <h1 class="bokningstitel">Tillgänglighetsredogörelse</h1>
+    <section class="information">
+      <article>
+        <h2>Färdtjänstens webbplats</h2>
+        <p>Här hittar du information om tillgängligheten på den här webbplatsen. </p>
+        <p>Webbplatsen är i stort förenlig med lagen om tillgänglighet till digital offentlig service. Vi vill att så många som möjligt ska kunna använda webbplatsen och de tjänster och funktioner som finns.</p>
+      </article>
+  
+      <article>
+        <h2>Vårt arbete med tillgänglighet</h2>
+        <p>Vi vill göra vår webbplats så tillgänglig som möjligt och följer riktlinjerna i Web Content Accessibility Guidelines (WCAG) 2.1 på nivå AA. Vårt mål är att alla användare, oavsett funktionsnedsättning, kan använda våra tjänster på ett enkelt sätt.</p>
+        
+      </article>
+  
+      <article>
+        <h2>Kontakta oss</h2>
+        <p>För att kunna fortsätta att förbättra tillgängligheten på vår webbplats behöver vi din feedback. Om du stöter på några problem eller har förslag på hur vi kan bli mer tillgängliga får du gärna kontakta oss genom att ringa till kundservice <strong>08-752 25 31</strong> eller mejla oss på <strong>stockholmfardtjanst@stockholmsstad.se</strong></p>
+        
+        <p>Vi uppskattar alla synpunkter som kan göra webbplatsen mer tillgänglig. Du kan också kontakta oss om det är innehåll du behöver som inte är tillgängligt för dig.</p>
+      </article>
+  
+      <article>
+        <h2>Tillsyn</h2>
+        <p>Det är Myndigheten för digital förvaltning, Digg, som har ansvaret för tillsyn att vi följer lagen om tillgänglighet till digital offentlig service. Om du inte är nöjd med hur vi uppfyller kraven på digital tillgänglighet kan du anmäla det till dem.</p>
+      
+      </article>
+  
+      <article>
+        <h2>Ansvar</h2>
+        <p>Trafikförvaltningen i Region Stockholm ansvarar för den här webbplatsen. Webbplatsen är i stort förenlig med lagen om tillgänglighet till digital offentlig service.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-info">
+      <p><strong>Stockholms färdtjänstservice</strong></p>
+      <p>Kontakta oss: 08-752 25 31</p>
+      <p>E-post: stockholmfardtjanst@stockholmsstad.se</p>
+      <p>Besöksadress: Blå piren 15 - 128 66 Stockholm</p>
+    </div>
+    <div class="footer-link">
+      <a href="tillganglighet.html">Tillgänglighetsredogörelse</a>
+    </div>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger'); /*hämta hamburgerknappen*/
+    const navMenu = document.getElementById('nav-menu'); /*hämta navmenyn*/
+    
+    hamburger.addEventListener('click', () => { /*vid klick på hamburgaren*/ 
+      navMenu.classList.toggle('active'); /*om hamburgermenyn(navmeny) är stängd så öppna, är menyn öppen så stäng (när klick sker)*/
+    });
+  </script>
+
+</body>
+</html>

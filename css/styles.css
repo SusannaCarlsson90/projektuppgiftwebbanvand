@@ -370,7 +370,18 @@ select {
  
 }
 /* Responsiv design för tablet och mobil */
-@media (max-width: 768px) {
+
+@media (max-width: 1100px) {
+  nav {
+    gap: 1rem; /* Mindre avstånd mellan länkar */
+    margin-left: 3rem;
+  }
+  
+  nav a {
+    font-size: 0.95rem; /* Lite mindre text */
+  }
+}
+@media (max-width:768px) {
   /* Header och hamburgermeny */
   header {
     flex-wrap: wrap;
