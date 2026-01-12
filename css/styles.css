@@ -369,6 +369,12 @@ select {
   text-align: left;
  
 }
+
+/*TILLGÄNGLIGHET*/
+.tillganglighet {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
 /* Responsiv design för tablet och mobil */
 
 @media (max-width: 1100px) {
@@ -379,6 +385,11 @@ select {
   
   nav a {
     font-size: 0.95rem; /* Lite mindre text */
+  }
+
+  .tillganglighet {
+    font-size: 3rem;
+    margin-bottom: 2rem;
   }
 }
 @media (max-width:768px) {
@@ -415,6 +426,10 @@ select {
   
   h1 {
     font-size: 1.5rem;
+  }
+  .tillganglighet {
+    font-size: 2rem;
+    margin-bottom: 2rem;
   }
 
   /* Hero-sektion */
