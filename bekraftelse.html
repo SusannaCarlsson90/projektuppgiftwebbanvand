@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projekt webbanvändbarhet</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo-section">
+      <i class="fa-solid fa-bus"></i>
+      <h1>Stockholms<br>färdtjänst</h1>
+    </div>
+    
+    <!-- Hamburger-knapp -->
+    <button class="hamburger" id="hamburger">
+      <i class="fa-solid fa-bars"></i> <!--lägger in ikon från fontawesome i en knapp så den blir klickbar-->
+    </button>
+    
+    <!-- Navigation -->
+    <nav id="nav-menu">
+      <a href="index.html">Startsida</a>
+      <a href="bokaresa.html">Boka resa</a>
+      <a href="resor.html">Mina resor</a>
+      <a href="hurbokar.html">Hur bokar du?</a>
+      <a href="info.html">Information</a>
+      <a href="sidor.html">Mina sidor</a>
+    </nav>
+  </header>
+
+  <main class="bokning">
+    <h1 class="bokningstitel">Boka din resa</h1>
+
+    <ul class="breadcrumb">
+      <li><a href="bokaresa.html">1. Sök resa</a></li>
+      <li><a href="bekraftaresa.html">2. Bekräfta resa</a></li>
+      <li><a href="bekraftelse.html" class="current">3. Bekräftelse</a></li>
+      
+    </ul> 
+  
+    <div class="bokningsruta">
+      <h2>Bokning bekräftad!</h2>
+      <section><p>Tack för din bokning!</p></section>
+      <h3>Resedetaljer:</h3>
+      <section><p>Utresa</p>
+      <p><strong>Från: </strong>Stockholm centralstation</p>
+      <p><strong>Till:</strong>Bengt Bagares gränd 10</p>
+      <p><strong>Datum:</strong> 30 december kl. 12:50</p>
+      <p><strong>Resenär:</strong> Reser ensam</p>
+      <p><strong>Hjälpmedel:</strong> Rullstol</p>
+      <h3>Hemresa</h3>
+      <p><strong>Från:</strong> Bengt Bagares gränd 10</p>
+      <p><strong>Till:</strong> Stockholm centralstation</p>
+
+    </section>
+
+        </div>
+
+        
+  </main>
+
+  <footer>
+    <div class="footer-info">
+      <p><strong>Stockholms färdtjänstservice</strong></p>
+      <p>Kontakta oss: 08-752 25 31</p>
+      <p>E-post: stockholmfardtjanst@stockholmstad.se</p>
+      <p>Besöksadress: Blå piren 15 - 128 66 Stockholm</p>
+    </div>
+    <div class="footer-link">
+      <a href="#tillganglighet">Tillgänglighetsredogörelse</a>
+    </div>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger'); /*hämta hamburgerknappen*/
+    const navMenu = document.getElementById('nav-menu'); /*hämta navmenyn*/
+    
+    hamburger.addEventListener('click', () => { /*vid klick på hamburgaren*/ 
+      navMenu.classList.toggle('active'); /*om hamburgermenyn(navmeny) är stängd så öppna, är menyn öppen så stäng (när klick sker)*/
+    });
+  </script>
+
+</body>
+</html>

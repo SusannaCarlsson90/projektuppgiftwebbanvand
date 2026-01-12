@@ -1,0 +1,373 @@
+* /*css reset tar bort webbläsares inbyggda standardinställningar*/ {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #d9d9d9;
+}
+
+header {
+  background-color: #1a5a7a;
+  color: white;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo-section i { /*stylar bussen så den blir större*/
+  font-size: 60px;
+  color: white;
+}
+
+
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  gap: 30px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.boka-knapp {
+  background-color: #1a6b2e;
+  color: white;
+  padding: 30px 80px;
+  font-size: 36px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer; /*visar hand vid hover för att tydliggöra klickbar*/
+  margin-bottom: 60px;
+  display: inline-block; /*ligger på rad men har width/height*/ 
+  text-decoration: none;
+}
+
+.boka-knapp:hover {
+  background-color: #145024;
+}
+
+/* Grid för de två boxarna */
+.info-boxes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px 60px;
+}
+
+/* Själva boxarna */
+.info-box {
+  background-color: #4a8fb3;
+  padding: 40px;
+  color: black;
+  text-decoration: none;
+  display: block;
+  
+}
+
+/* Hover-effekt på boxarna */
+.info-box:hover {
+  background-color: #3a7fa3;
+  cursor: pointer;
+}
+
+/* Rubrikerna i boxarna */
+.info-box h2 {
+  font-size: 42px;
+  margin-bottom: 30px;
+}
+
+/* Texten i boxarna */
+.info-box p {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  color: black;
+  font-weight: bold;
+}
+
+
+
+footer {
+  background-color: #2a5f7a;
+  color: white;
+  padding: 30px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-info p {
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+.footer-link a {
+  color: white;
+  font-size: 16px;
+  text-decoration: underline;
+}
+
+/* Hamburger-knapp (dold på desktop) */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+/*BOKA RESA SIDA*/ 
+.bokning { /*rubriken = bokning och bokningstitel*/ 
+  padding: 40px 20px;
+  text-align: center;
+  min-height: 80vh; /* Se till att sidan fyller höjden */
+}
+.bokningstitel { /*storlek etc på rubriken*/
+  color: black;
+  font-size: 48px; 
+  font-weight: 900;
+  margin-bottom: 30px;
+}
+
+/*BRÖDSMULOR FRÅN W3SCHOOL*/
+/* Stylar listan */
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  background-color: #eee;
+}
+
+/* Visa lista sida vid sida */
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+
+/* Lägg till slashsymbol mellan varje */
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+
+/* Färg på länkar */
+ul.breadcrumb li a.current {
+  color: #0275d8;
+  text-decoration: none;
+  opacity: 1;
+}
+
+ul.breadcrumb li a {
+  text-decoration: none;
+  color: #0275d8;     
+  opacity: 0.5;       /* gör genomskinlig så tydligare aktiv länk */
+  
+}
+
+/* Färg vid hover */
+ul.breadcrumb li a:hover {
+  color: #01447e;
+  opacity: 0.8; /*tydligare vid hover*/ 
+  text-decoration: underline;
+}
+
+/*FORMULÄR*/
+
+.bokningsruta { /*rutan bakom formuläret*/ 
+  background-color: #ffffff; /* Vit bakgrund */
+  max-width: 600px;     
+  margin: 50px auto;    /* 50px i toppen/botten, auto centrerar den i mitten! */
+  padding: 40px;        /* Luft inuti rutan så texten inte nuddar kanten */
+  border-radius: 8px;   /* Lite rundade hörn */ 
+  
+
+}
+
+.bokningsform {
+  display: flex;
+  flex-direction: column;
+}
+
+.bokningsform > label { /*Styling endast för barn som är direkta barn till bokningsform så ej radiodelarna*/
+  display: block; /*så label tar upp hela raden*/
+  margin-bottom: 8px; /*avstånd mellan label och input fält*/
+  font-weight: 600;
+  margin-top: 15px; /*avstånd ovanför varje label*/
+  text-align: left;
+}
+
+input[type="text"], /*listar input fält separat [] för att inte påverka knapparna.*/
+input[type="date"],
+input[type="time"],
+select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  font-size: 16px; /**/
+  box-sizing: border-box; /*Så widht inkluderar padding och border*/
+  border: 2px solid #e0e0e0; /*ljusgrå ram runt fältet*/
+  border-radius: 6px;
+ 
+}
+
+.h2resenar {
+  text-align: left;
+}
+
+.radio-grupp {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.radiolistavertikal {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+  align-items: flex-start;
+}
+
+.radio-item {
+  margin-bottom: 15px;
+}
+
+.presenar {
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.boka-knapp {
+  width: 100%;
+  padding: 15px;
+  background-color: #145024;
+  color: white; /*textfärg*/
+  border: none; /*ta bort standardramen*/
+  border-radius: 4px; /*lite runda hörn*/
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer; /*muspekaren blir en hand när man håller över knappen*/
+  margin-top: 20px;
+  display: flex; /*flex för att kunna lägga ikon och text där jag vill*/
+  justify-content: center;
+  align-items: center;
+  gap: 12px; /*mellanrum mellan ikon och text*/
+}
+
+.bokningsruta h1, p {
+  text-align: center;
+  margin: 15px;
+}
+/* Responsiv design för tablet och mobil */
+@media (max-width: 768px) {
+  /* Header och hamburgermeny */
+  header {
+    flex-wrap: wrap;
+    padding: 15px 20px;
+  }
+  
+  .hamburger {
+    display: block;
+  }
+  
+  nav {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    gap: 0;
+  }
+  
+  nav.active {
+    display: flex;
+  }
+  
+  nav a {
+    padding: 15px 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+  }
+
+  /* Logo och buss */
+  .logo-section i {
+    font-size: 40px;
+  }
+  
+  h1 {
+    font-size: 24px;
+  }
+
+  /* Hero-sektion */
+  .hero {
+    padding: 40px 20px;
+  }
+
+  /* Boka-knapp */
+  .boka-knapp {
+    padding: 20px 40px;
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+
+  /* Info-boxar staplas under varandra */
+  .info-boxes {
+    grid-template-columns: 1fr; /* EN kolumn istället för två */
+    gap: 20px;
+    padding: 0 20px 40px;
+  }
+  
+  .info-box {
+    padding: 30px;
+  }
+  
+  .info-box h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .info-box p {
+    font-size: 18px;
+  }
+
+  /* Footer staplas vertikalt */
+  footer {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    padding: 20px;
+  }
+}
+
