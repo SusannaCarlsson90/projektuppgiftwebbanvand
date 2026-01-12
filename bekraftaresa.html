@@ -50,30 +50,36 @@
     <form class="bokningsform">
 
       <label for="fran">Från:</label>
-      <input type="text" id="fran" value="Vasagatan 10, Stockholm" readonly> <!--Read only så att det ör förinskrivet men samma formulär-->
+      <input type="text" id="fran" value="Stockholm centralstation" readonly> <!--Read only så att det ör förinskrivet men samma formulär-->
     
       <label for="till">Till:</label>
-      <input type="text" id="till" value="Drottninggatan 50, Stockholm" readonly>
+      <input type="text" id="till" value="Bengt bagares gränd 10" readonly>
     
       <div class="radio-grupp">
         
         <label class="radioknapp">
-          <input type="radio" name="resetyp" id="enkel" value="Enkelresa" checked disabled> <!--Ibockad men går ej att trycka på-->
+          <input type="radio" name="resetyp" id="enkel" value="Enkelresa" disabled> <!-- Går år ej att trycka på-->
           Enkelresa
         </label>
     
         <label class="radioknapp">
-          <input type="radio" name="resetyp" id="retur" value="Tur och retur" disabled> <!--Går ej att trycka på-->
+          <input type="radio" name="resetyp" id="retur" value="Tur och retur" checked disabled> <!-- i bockad men Går ej att trycka på-->
           Tur och retur
         </label>
 
       </div>
 
       <label for="datum">Datum för avresa:</label>
-      <input type="date" id="datum" value="2026-01-15" readonly>
+      <input type="date" id="datum" value="2025-12-30" readonly>
       
-      <label for="tid">Tid för avgång:</label>
-      <input type="time" id="tid" value="14:30" readonly>
+      <label for="tid">Tid för avresa:</label>
+      <input type="time" id="tid" value="12:50" readonly>
+
+      <label for="datum">Datum för hemresa:</label>
+      <input type="date" id="datum" value="2025-12-30" readonly>
+      
+      <label for="tid">Tid för hemresa:</label>
+      <input type="time" id="tid" value="18:00" readonly>
 
       <h2 class="h2resenar">Resenärer</h2>
       <p class="presenar">Klicka i alternativen nedan som stämmer för dig:</p>
