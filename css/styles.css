@@ -58,13 +58,13 @@ nav a:hover {
 .boka-knapp {
   background-color: #1a6b2e;
   color: white;
-  padding: 1.87rem 5rem;
-  font-size: 2.25rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.125rem;
   font-weight: bold;
   border: none;
-  cursor: pointer; /*visar hand vid hover för att tydliggöra klickbar*/
+  cursor: pointer;
   margin-bottom: 3.75rem;
-  display: inline-block; /*ligger på rad men har width/height*/ 
+  display: inline-block;
   text-decoration: none;
 }
 
@@ -272,22 +272,7 @@ select {
   font-weight: 600;
 }
 
-.boka-knapp {
-  width: 100%;
-  padding: 0.938rem;
-  background-color: #145024;
-  color: white; /*textfärg*/
-  border: none; /*ta bort standardramen*/
-  border-radius: 0.25rem; /*lite runda hörn*/
-  font-size: 1.125rem;
-  font-weight: 600;
-  cursor: pointer; /*muspekaren blir en hand när man håller över knappen*/
-  margin-top: 1.25rem;
-  display: flex; /*flex för att kunna lägga ikon och text där jag vill*/
-  justify-content: center;
-  align-items: center;
-  gap: 0.75rem; /*mellanrum mellan ikon och text*/
-}
+
 
 .bokningsruta h1, p {
   text-align: center;
@@ -341,6 +326,7 @@ select {
   background-color: #f9f9f9; /* Ljusgrå bakgrund för varje resa */
   border-radius: 0.313rem;
 }
+
 
 
 /* Responsiv design för tablet och mobil */
