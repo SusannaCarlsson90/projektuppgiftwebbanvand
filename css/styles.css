@@ -342,7 +342,33 @@ select {
   border-radius: 0.25rem;
 }
 
+/*INFORMATION*/
+.information {
+  background-color: white;
+ max-width: 80ch;
+ margin: 0 auto; /*centrerar så vita rutan är i mitten*/
+ padding: 2.5rem 1.25rem; /* luft upp/ner och höger/vänster */
+ 
+}
 
+.information article {
+  margin-bottom: 2.5rem; /*avstånd under varje artikel*/
+  max-width: 65ch;
+  margin-left: auto; /*autocentrerar artikeln tillsammans med margin-right*/ 
+  margin-right: auto;
+}
+
+.information article h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.information article p {
+  font-size: 1rem; 
+  line-height: 1.5; /*radavstånd*/
+  text-align: left;
+ 
+}
 /* Responsiv design för tablet och mobil */
 @media (max-width: 768px) {
   /* Header och hamburgermeny */
