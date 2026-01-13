@@ -21,7 +21,7 @@ header {
 .logo-section {
   display: flex;
   align-items: center;
-  gap: 1.25 rem;
+  gap: 1.25rem;
 }
 
 .logo-section i { /*stylar bussen så den blir större*/
