@@ -189,7 +189,7 @@ ul.breadcrumb li a.current {
 ul.breadcrumb li a {
   text-decoration: none;
   color: #0275d8;     
-  opacity: 0.5;       /* gör genomskinlig så tydligare aktiv länk */
+  opacity: 0.76;       /* gör genomskinlig så tydligare aktiv länk */
   
 }
 
