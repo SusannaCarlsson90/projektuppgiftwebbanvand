@@ -280,9 +280,10 @@ ul.breadcrumb li {
 
 /* Färg på länkar */
 ul.breadcrumb li a {
-  color: #0275d8;
+  color: #0e3042;;
   text-decoration: none;
   opacity: 1;
+  font-weight: bold;
 }
 
 
