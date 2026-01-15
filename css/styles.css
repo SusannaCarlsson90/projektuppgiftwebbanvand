@@ -55,6 +55,25 @@ nav a:hover {
   padding: 3.75rem 1.25rem;
 }
 
+.boka-knappstart {
+  background-color: #1a6b2e;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.125rem;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 3.75rem;
+  display: inline-block;
+  text-decoration: none;
+  width: 30%;
+ 
+}
+
+.boka-knappstart:hover {
+  background-color: #145024;
+}
+
 .boka-knapp {
   background-color: #1a6b2e;
   color: white;
@@ -110,7 +129,8 @@ nav a:hover {
   line-height: 1.6;
   margin-bottom: 0.62rem;
   color: black;
-  font-weight: bold;
+  text-align: left;
+  
 }
 
 
@@ -119,19 +139,30 @@ footer {
   color: white;
   padding: 1.875rem 2.5rem;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+  gap: 1rem;
 }
 
 .footer-info p {
   margin-bottom: 0.5rem;
   font-size: 1rem;
+  text-align: left;
 }
 
 .footer-link a {
   color: white;
   font-size: 1rem;
   text-decoration: underline;
+  display: inline-block; 
+  
+}
+
+
+.footer-link a:hover {
+  text-decoration: none;
+  opacity: 0.8;
 }
 
 /* Hamburger-knapp (dold på desktop) */
@@ -158,6 +189,52 @@ footer {
   margin-bottom: 1.87rem;
 }
 
+.återkommande {
+  text-align: left;
+  padding: 1.25rem 0;
+  border-top: 0.07rem solid #ccc; /*linje för att hålla isär vad som är vad i formuläret*/
+  border-bottom: 0.07rem solid #ccc;
+  margin: 1.25rem 0; 
+}
+
+.återkommande h2 {
+  margin: 0 0 1.25rem 0; 
+}
+
+.återkommande p {
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+
+.återkommande label {
+  display: block;
+  margin: 0.31rem 0;
+  cursor: pointer;
+}
+
+.återkommande input[type="checkbox"] {
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+
+.återkommande > div {
+  margin-bottom: 1.5rem; 
+}
+
+.återkommande input[type="date"],
+.återkommande input[type="time"] {
+  display: block;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem; 
+}
+
+
+.återkommande > label[for="datum"] { /*direkt barn till återkommande*/
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
 /*BRÖDSMULOR FRÅN W3SCHOOL*/
 /* Stylar listan */
 ul.breadcrumb {
@@ -172,26 +249,16 @@ ul.breadcrumb li {
   font-size: 1.12rem;
 }
 
-/* Lägg till slashsymbol mellan varje */
-ul.breadcrumb li+li:before {
-  padding: 0.5rem;
-  color: black;
-  content: "/\00a0";
-}
+
 
 /* Färg på länkar */
-ul.breadcrumb li a.current {
+ul.breadcrumb li a {
   color: #0275d8;
   text-decoration: none;
   opacity: 1;
 }
 
-ul.breadcrumb li a {
-  text-decoration: none;
-  color: #0275d8;     
-  opacity: 0.76;       /* gör genomskinlig så tydligare aktiv länk */
-  
-}
+
 
 /* Färg vid hover */
 ul.breadcrumb li a:hover {
@@ -200,6 +267,10 @@ ul.breadcrumb li a:hover {
   text-decoration: underline;
 }
 
+.breadcrumb i {
+  margin-left: 0.5rem; /*avstånd ikon och ordet i brödsmulorna*/
+  margin-right: 0.5rem;
+}
 /*FORMULÄR*/
 
 .bokningsruta { /*rutan bakom formuläret*/ 
@@ -211,6 +282,7 @@ ul.breadcrumb li a:hover {
   
 
 }
+
 
 .bokningsform {
   display: flex;
@@ -287,7 +359,7 @@ select {
   margin: 3.125rem auto;
   padding: 2.5rem;
   border-radius: 0.5rem;
- 
+  text-align: ;
 }
 
 .bokningsruta2 h2 {
@@ -318,6 +390,7 @@ select {
 .bokningsruta2 p {
   margin: 0.5rem 0;
   line-height: 1.6;
+  text-align: left;
 }
 
 .bokningsruta2 article { /*Sätter bakgrund på båda article så det ser ut som två separata rutor*/
@@ -329,17 +402,41 @@ select {
 
 /*MINA RESOR*/
 .avboka-knapp {
-  background-color: #c62828;
-  color: black;
+  background-color: #C62828; 
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
   padding: 0.75rem 1.5rem;
   font-size: 1.12rem;
-  font-weight: bold;
-  border: none;
+  font-weight:lighter;
+  
   cursor: pointer;
   margin-bottom: 3.75rem;
   display: inline-block;
   text-decoration: none;
   border-radius: 0.25rem;
+}
+
+.redigera-knapp {
+  background-color: #0066CC;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.12rem;
+  font-weight: lighter;
+ 
+  cursor: pointer;
+  margin-bottom: 3.75rem;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 0.25rem;
+}
+
+.redigera-knapp:hover {
+  background-color: #0052A3;
+}
+
+.avboka-knapp:hover {
+  background-color: #A01F1F;
 }
 
 /*INFORMATION*/

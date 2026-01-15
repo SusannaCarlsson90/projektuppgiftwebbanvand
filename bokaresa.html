@@ -10,8 +10,9 @@
 
 <body>
   <header>
+    <a href="index.html">
     <div class="logo-section">
-      <i class="fa-solid fa-bus"></i>
+      <i class="fa-solid fa-bus"></i></a>
       <h1>Stockholms<br>färdtjänst</h1>
     </div>
     
@@ -27,7 +28,7 @@
       <a href="resor.html">Mina resor</a>
       <a href="hurbokar.html">Hur bokar du?</a>
       <a href="info.html">Information</a>
-      <a href="sidor.html">Mina sidor</a>
+      
     </nav>
   </header>
 
@@ -35,9 +36,8 @@
     <h1 class="bokningstitel">Boka din resa</h1>
 
     <ul class="breadcrumb">
-      <li><a href="bokaresa.html" class="current">1. Sök resa</a></li>
-      <li><a href="bekraftaresa.html">2. Bekräfta resa</a></li>
-      <li><a href="bekraftelse.html">3. Bekräftelse</a></li>
+      <li><a href="bokaresa.html">Sök resa <i class="fa-solid fa-arrow-right"></i></a></i></li>
+      
       
     </ul> 
   
@@ -62,19 +62,48 @@
             Tur och retur
           </label>
 
-          <label class="radioknapp">
-            <input type="radio" name="resetyp" id="retur" value="Återkommande resa">
-        Återkommande resa
-          </label>
-
-          
-
-
+        
+        
 </div>
-<label for="datum">Datum för avresa:</label>
+<label for="datum">Datum för resa:</label>
     <input type="date" id="datum">
-    <label for="tid">Tid för avgång:</label>
+    <label for="tid">Tid för upphämtning:</label>
 <input type="time" id="tid">
+
+<label for="datum">Datum för hemresa:</label>
+    <input type="date" id="datum">
+    <label for="tid">Tid för hemresa:</label>
+<input type="time" id="tid">
+
+<section class="återkommande">
+<h2>Återkommande resa</h2>
+
+<div>
+  <p><strong>Välj dagar:</strong></p>
+  <label><input type="checkbox"> Måndag</label><br>
+  <label><input type="checkbox"> Tisdag</label><br>
+  <label><input type="checkbox"> Onsdag</label><br>
+  <label><input type="checkbox"> Torsdag</label><br>
+  <label><input type="checkbox"> Fredag</label><br>
+  <label><input type="checkbox"> Lördag</label><br>
+  <label><input type="checkbox"> Söndag</label><br>
+</div>
+
+<label for="datum"><strong>Startdatum för återkommande resa:</strong></label>
+    <input type="date" id="datum">
+
+<div>
+  <label for="tid"><strong>Tid för upphämtning</strong></label><br>
+  <input type="time" id="tid">
+</div>
+
+<div>
+  <label for="tid"><strong>Tid för hemresa</strong></label><br>
+  <input type="time" id="tid">
+</div>
+
+</section>
+
 
 <h2 class="h2resenar">Resenärer</h2>
 <p class="presenar">Klicka i alternativen nedan som stämmer för dig:</p>
