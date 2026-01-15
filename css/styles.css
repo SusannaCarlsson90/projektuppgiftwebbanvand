@@ -4,9 +4,21 @@
   box-sizing: border-box;
 }
 
+
+html, body {
+  height: 100%;
+}
+
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   font-family: Arial, sans-serif;
   background-color: #d9d9d9;
+}
+
+main {
+  flex: 1; /* Tar upp allt tillgängligt utrymme */
 }
 
 header {
@@ -22,6 +34,13 @@ header {
   display: flex;
   align-items: center;
   gap: 1.25rem;
+  flex-shrink: 0;
+}
+.logo-section a {  
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
 }
 
 .logo-section i { /*stylar bussen så den blir större*/
@@ -48,6 +67,14 @@ nav a {
 
 nav a:hover {
   text-decoration: underline;
+}
+
+nav a.active { /*markerar aktiv länk i navbar*/ 
+  background-color: white;
+  color: black;          
+  padding: 0.5rem 1rem;    /* Ger den lite plats runt om */
+  border-radius: 4px;      /* Rundade hörn */
+ 
 }
 
 .hero {
@@ -180,7 +207,7 @@ footer {
 .bokning { /*rubriken = bokning och bokningstitel*/ 
   padding: 2.5rem 1.25rem;
   text-align: center;
-  min-height: 80vh; /* Se till att sidan fyller höjden */
+  
 }
 .bokningstitel { /*storlek etc på rubriken*/
   color: black;
